@@ -1,7 +1,13 @@
 # library-management
+ .NetCore + VueJS library management app
+
+ There are two folders 'app-api' containing the aplication api, in .NET Core 3.1 that uses MS SQL as db, and app-ui containing the VueJS
+ app created with '@vue/cli 4.3.1'
+
 
 # Backend desing
- Overall solution has been developed as a clean arthitecture it contains 4 abstract layers: api, application, domain and infrastructure.
+ Overall the backed has been developed as a clean arthitecture developed with .NET Core Api 3.1 it contains 4 abstract layers: api,
+ application, domain and infrastructure.
 
  Each api controller inherit from BaseApiController. In BaseApiController it is defined the routing, and how to interpret the 
  response from the handler in terms of HTTP Status.
@@ -14,6 +20,15 @@
  In the infrastructure layer contains the persistence logic that uses the repository pattern, each repository inherit from
  BaseRepository. The infrastructure layer is not exclusive for the persistence, but it can be expanded to contain e.g. file operations,
  external api call etc.
+ 
+ 
+ # Frontend
+ The fromtend has been developed with @vue/cli 4.3.1 (https://vuejs.org/) and bootstrap for styling. 
+ Since the user stories and the backend have user context, I have created a login page that does jwt sigin in the backend. The
+ autentification token is stored in the local storage. The UI in each roution action if the authentication data are present in the
+ local storage, if not then the app redirects in the login page. 
+ The other part is simple ajax comunication with the backend and refreshing the UI after the user action.
+ 
  
  # Setup
  To run the application, you need:
