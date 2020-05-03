@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryManagement.Api</name>
+    </assembly>
+    <members>
+        <member name="T:LibraryManagement.Api.Controllers.BookController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LibraryManagement.Api.Controllers.BookController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="bus"></param>
+        </member>
+        <member name="M:LibraryManagement.Api.Controllers.BookController.GetAll">
+            <summary>
+               Get all searches by the user
+            </summary>
+            <returns>Return a list of suggestions</returns>
+        </member>
+        <member name="T:LibraryManagement.Api.Controllers.UserController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LibraryManagement.Api.Controllers.UserController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="bus"></param>
+        </member>
+        <member name="M:LibraryManagement.Api.Framework.Controllers.BaseApiController.#ctor(MediatR.IMediator)">
+            <summary>
+                BaseApiController ctor.
+            </summary>
+            <param name="bus">Cmd. transportation buss</param>
+        </member>
+        <member name="M:LibraryManagement.Api.Framework.Controllers.BaseApiController.ToResult``1(LibraryManagement.Application.MessageResponse{``0})">
+            <summary>
+                Formats the response status to be sent to th client
+            </summary>
+            <typeparam name="TQueryResult">The result object type</typeparam>
+            <param name="response">the wrapper of the result object</param>
+            <returns></returns>
+        </member>
+        <member name="T:LibraryManagement.Api.Framework.Extensions.ContainerBuilderExtensions">
+            <summary>
+                ContainerBuilderExtensions
+            </summary>
+        </member>
+    </members>
+</doc>
