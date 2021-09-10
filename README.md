@@ -15,9 +15,9 @@
  Each controller action is sent to handler via the MediatR bus, the handler defines the logic to be performed, and validations per
  request. The handler and the api model for each action are located at LibraryManagement.Application.
 
- The domain layer/core contains the collection of definitions for the app model, repository and configuration.
+Domain layer/core contains the collection of definitions for the app model, repository and configuration.
 
- In the infrastructure layer contains the persistence logic that uses the repository pattern, each repository inherit from
+ In the infrastructure layer is implemented persistence logic that uses repository pattern, each repository inherit from
  BaseRepository. The infrastructure layer is not exclusive for the persistence, but it can be expanded to contain e.g. file operations,
  external api call etc.
  
