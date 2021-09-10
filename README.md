@@ -5,7 +5,7 @@
  app created with '@vue/cli 4.3.1'
 
 
-# Backend desing
+# Backend design
  Overall the backed has been developed as a clean arthitecture developed with .NET Core Api 3.1 it contains 4 abstract layers: api,
  application, domain and infrastructure.
 
